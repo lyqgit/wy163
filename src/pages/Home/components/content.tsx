@@ -1,11 +1,20 @@
 import React,{ Component } from 'react'
 import './content.scss'
 
-export default class Content extends Component{
+interface State {
+  seletedTab:string
+}
+
+export default class Content extends Component<any,State>{
+
+  private onClick= (event:any):void =>{
+    console.log(event)
+  }
+
   render(){
     return(
       <div className="contentContainer">
-        <nav className='contentTab'>
+        <nav className='contentTab' onClick={this.onClick}>
           <a className='selected'>
             <div>
               <span>推荐音乐</span>
