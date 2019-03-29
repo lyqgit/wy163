@@ -1,0 +1,58 @@
+.hotTop{
+  position: relative;
+  padding-top: 38.9%;
+  background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  .hotOpct{
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    .hotIcon{
+      width: 142px;
+      height: 67px;
+      background-position: -24px -30px;
+    }
+    .hotTime{
+      color: hsla(0,0%,100%,.8);
+      margin-top: 10px;
+      font-size: 12px;
+      transform: scale(.91);
+      transform-origin: left top;
+    }
+  }
+
+}
+
+.hotTop:after{
+  content: ' ';
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,.2);
+}
+
+.hotDn{
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  padding-bottom: env(safe-area-inset-bottom);
+  .hotView{
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyMiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJtMSAxbDEwIDEwLTEwIDEwIi8+PC9zdmc+) 100% no-repeat;
+    color: #999;
+    background-size: 7px 12px;
+    padding-right: 14px;
+  }
+}

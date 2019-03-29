@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 // import './App.css';
-import Home from './pages/Home/index'
+import Header from './layout/headerLayout'
+import Main from './layout/mainLayout'
+import Footer from './layout/footerLayout'
 import '@/static/css/reset.css'
 
 class App extends Component {
@@ -23,7 +25,12 @@ class App extends Component {
       //     </a>
       //   </header>
       // </div>
-      <Home/>
+      <div style={{minHeight:'100%'}}>
+        <Header/>
+        <Main/>
+        <Footer/>
+      </div>
+
     );
   }
 }

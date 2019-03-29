@@ -1,6 +1,7 @@
 import React,{ Component } from 'react'
+import './footerLayout.scss'
 
-export default class Footer extends Component{
+export default class FooterLayout extends Component{
   render(){
     return(
       ''

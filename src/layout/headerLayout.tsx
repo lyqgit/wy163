@@ -1,7 +1,7 @@
 import React,{ Component } from 'react'
-import './header.scss'
+import './headerLayout.scss'
 
-export default class Header extends Component{
+export default class HeaderLayout extends Component{
 
 
 
